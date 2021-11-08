@@ -1,0 +1,4 @@
+[
+    {"id":1,"title":"Yoga and Pilate Training","category": ["Training", "Fitness"],"description":"This yoga and pilate training session is designed for all levels of trainees","price-desc":"For one session","price":80.00, "image": "./images/sliderImg1.jpg"},
+    {"id":2,"title":"Fitness Training","category": ["Fitness", "Yoga"],"description":"This fitness training session is designed for beginners","price-desc":"For one session","price":40.00, "image": "./images/sliderImg2.jpg"}
+]

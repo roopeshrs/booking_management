@@ -1,0 +1,382 @@
+.request, .service, .payment{
+    margin: 16px;
+    margin-top: 50px;
+}
+
+.serviceNotification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: #018AB8;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.bar{
+    width: 5px;
+    height: auto;
+    background-color: #fff;
+    margin-right: 20px;
+    align-self: stretch;
+}
+
+.customer{
+    border: 2px solid #DBDBDB;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    padding: 28px 16px 44px 16px;
+}
+
+.status{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.status-details{
+    width: 30%;
+}
+
+.status-details h3{
+    color: #D06400;
+    margin-bottom: 12px;
+}
+.status-details p{
+    color: #949494;
+}
+
+.status-progress-bar{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.step-progress-bar {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.step-progress-bar li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px 0;
+    background-color: #DDDDDD;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    border: 2px solid #fff;
+}
+
+.step-progress-bar .status-pending:after{
+    content: 'Request';
+    color: #818181;
+    position: absolute;
+    top: 20px;
+    left: -9px;
+}
+.step-progress-bar .status-active:after{
+    content: 'Service';
+    color: #818181;
+    position: absolute;
+    top: 20px;
+    left: -9px;
+}
+.step-progress-bar .status-payment:after{
+    content: 'Payment';
+    color: #818181;
+    position: absolute;
+    top: 20px;
+    left: -9px;
+}
+
+.status-pending.active:after{
+    color: #0184B5;
+}
+
+.step-progress-bar::before{
+    content: '';
+    background-color: #DDDDDD;
+    width: 50%;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    z-index: -5;
+}
+
+.step-progress-bar::after{
+    content: '';
+    background-color: #DDDDDD;
+    width: 99%;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    z-index: -10;
+}
+
+.step-progress-bar.active1::before{
+    background-color: #9ECBDA;
+}
+.step-progress-bar.active2::after{
+    background-color: #9ECBDA;
+}
+
+.status-pending.active::before{
+    content: '✓';
+    background-color: #9ECBDA;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+}
+.status-active.active::before{
+    content: '✓';
+    background-color: #9ECBDA;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+}
+.status-payment.active::before{
+    content: '✓';
+    background-color: #9ECBDA;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+}
+
+.customer-detail{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.customer-profile{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.deals{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.customer-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.customer-name{
+    margin-left: 20px;
+}
+
+.customer-name h2{
+    color: #018AB8;
+}
+
+.deals h2{
+    margin-left: 20px;
+}
+
+.fa-handshake{
+    color: #9DCAD9;
+    pointer-events: none;
+}
+
+.available-status{
+    color: #878787;
+    margin-bottom: 20px;
+}
+
+.available-time{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fa-clock{
+    color: #9DCAD9;
+}
+
+.av-date{
+    margin-left: 12px;
+}
+
+.av-time{
+    margin-left: 20px;
+}
+
+.customer-address{
+    color: #048BB9;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.action button{
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.rescheduleBtn, .chatBtn{
+    background-color: #fff;
+    color: #239AC2;
+    border: 2px solid #239AC2;
+}
+
+.acceptBtn, .checkinBtn, .invoiceBtn, .resendInvoiceBtn{
+    background-color: #018AB8;
+    color: #fff;
+    border: none;
+}
+
+.more{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #018AB8;
+    cursor: pointer;
+}
+
+.invoice{
+    margin-bottom: 32px;
+}
+
+.fa-file-invoice-dollar{
+    color: #93C6D6;
+    margin-right: 10px;
+}
+
+.invoice h2{
+    margin-bottom: 10px;
+}
+
+.invoice-price{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: bold;
+}
+
+.invoice-price p{
+    margin-left: 32px;
+    font-size: 20px;
+}
+
+.invoice-price .amount{
+    color: #CF6000;
+}
+
+.view-more, .no-view-more{
+    text-align: center;
+}
+
+.view-more button{
+    background-color: #fff;
+    color: #858585;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.no-view-more{
+    color: #858585;
+}
+
+
+@media screen and (max-width: 1060px){
+    .customer-name h2 {
+        font-size: 18px;
+    }
+    .customer-name h4 {
+        font-size: 14px;
+    }
+    .deals h2 {
+        font-size: 18px;
+    }
+    .fa-handshake{
+        font-size: 4em;
+    }
+    .action button {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    .more{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .customer-name h2 {
+        font-size: 15px;
+    }
+    .customer-name h4 {
+        font-size: 12px;
+    }
+    .deals h2 {
+        font-size: 15px;
+    }
+    .fa-handshake{
+        font-size: 2em;
+    }
+    .action button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    .more{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .customer-name h2 {
+        font-size: 14px;
+    }
+    .deals h2 {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .fa-handshake{
+        font-size: 1.5em;
+    }
+    .action button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .more{
+        font-size: 14px;
+    }
+}
